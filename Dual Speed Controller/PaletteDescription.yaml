@@ -1,0 +1,22 @@
+!Component
+        name: Dual Speed Controller
+        type: Controller
+        supports: {PIDOutput: 2}
+        help: DualSpeedController controls two SpeedControllers as one.
+        properties:
+          - !ChildSelectionProperty
+            name: Motor1
+            type: PIDOutput
+            validators: [DualSpeedController, ChildDropdownSelected]
+            default: 0
+          - !BooleanProperty
+            name: Motor1 Inverted
+            default: false
+          - !ChildSelectionProperty
+            name: Motor2
+            type: PIDOutput
+            validators: [DualSpeedController, ChildDropdownSelected]
+            default: 1
+          - !BooleanProperty
+            name: Motor2 Inverted
+            default: false
