@@ -1,0 +1,29 @@
+!Component
+  name: Two Joystick Button
+  type: Joystick Button
+  help: Two joystick buttons that binds a driver action to one of two commands.
+  properties:
+    - !ParentProperty
+      name: Joystick
+    - !TypeSelectionProperty
+      name: False Command
+      type: Command
+      validators: [TypeDropdownSelected]
+      default: None
+    - !TypeSelectionProperty
+      name: True Command
+      type: Command
+      validators: [TypeDropdownSelected]
+      default: None
+    - !ChoicesProperty
+      name: TriggerButton
+      choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32"]
+      default: "1"
+    - !ChoicesProperty
+      name: CommandSelectButton
+      choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32"]
+      default: "2"                                                                                                                                                                                   
+    - !ChoicesProperty                                                                                                                                                                               
+      name: When to Run                                                                                                                                                                              
+      choices: [whenPressed, whileHeld]                                                                                                                                                              
+      default: whenPressed                                                                                                                                                                           
