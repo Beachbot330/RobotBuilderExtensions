@@ -1,0 +1,13 @@
+!Component
+        name: NavX
+        type: PIDSource
+        help: NavX-MXP IMU from Kauai Labs.
+        properties:
+          - !ChoicesProperty
+            name: Port
+##            choices: ["SPI", "I2C", "Serial", "USB"]
+            choices: ["SPI"]
+            default: "SPI"
+          - !IntegerProperty
+            name: UpdateRate
+            default: 50
