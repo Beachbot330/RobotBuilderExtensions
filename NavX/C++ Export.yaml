@@ -1,0 +1,9 @@
+  NavX:
+    Defaults: "None"
+    Export: "RobotMap"
+    Import: "\\#include \"${ClassName}.h\""
+    Declaration: "${ClassName} *#variable($Name);"
+    Allocation: "${ClassName} *#variable($Name);"
+    ClassName: "AHRS"
+    Construction: "#variable($Name) = new ${ClassName}(SPI::Port::kMXP, ${UpdateRate});"
+    LiveWindow: "lw->AddSensor(\"$Subsystem\", \"$Short_Name\", #variable($Name));"
