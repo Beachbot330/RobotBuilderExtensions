@@ -1,0 +1,16 @@
+!Component
+        name: Dual Servo
+        type: Controller
+        supports: {Servo: 2}
+        help: DualServo controls two Servos as 1.
+        properties:
+          - !ChildSelectionProperty
+            name: Servo1
+            type: Servo
+            validators: [DualServo, ChildDropdownSelected]
+            default: 0
+          - !ChildSelectionProperty
+            name: Servo2
+            type: Servo
+            validators: [DualServo, ChildDropdownSelected]
+            default: 1
