@@ -4,4 +4,4 @@
     Package: "com.kauailabs.navx.frc"
     Import: "import com.kauailabs.navx.frc.AHRS;\nimport edu.wpi.first.wpilibj.SPI.Port;"
     Construction: "#variable($Name) = new ${ClassName}(Port.kMXP, (byte)${UpdateRate});"
-    LiveWindow: "LiveWindow.addSensor(\"$Subsystem\", \"$Short_Name\", #variable($Name));"
+    LiveWindow: "addChild(#variable($Name));"

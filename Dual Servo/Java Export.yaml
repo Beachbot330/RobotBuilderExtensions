@@ -3,4 +3,4 @@
     ClassName: "BBDualServo"
     Import: "import org.usfirst.frc330.wpilibj.BBDualServo;"
     Construction: "#variable($Name) = new ${ClassName}(#variable($Servo1), #variable($Servo2));"
-    LiveWindow: "LiveWindow.addActuator(\"$Subsystem\", \"$Short_Name\", #variable($Name));"
+    LiveWindow: "addChild(#variable($Name));"
