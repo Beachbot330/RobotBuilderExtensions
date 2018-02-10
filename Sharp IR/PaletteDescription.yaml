@@ -1,0 +1,14 @@
+!Component
+        name: Sharp IR
+        type: Sensor
+        help: Sharp IR distance sensors, GP2Y0A51SK0F and GP2Y0A41SK0F.
+        properties:
+          - !ChoicesProperty
+            name: Sharp IR Channel (Analog)
+            choices: ["0", "1", "2", "3", "4", "5", "6", "7"]
+            validators: [AnalogInput]
+            default: "0"
+          - !ChoicesProperty
+            name: SharpType
+            choices: ["GP2Y0A41SK0F", "GP2Y0A51SK0F"]
+            default: "GP2Y0A51SK0F"

@@ -1,0 +1,7 @@
+  Sharp IR:
+    Defaults: "CustomComponent,None"
+    ClassName: "SharpIR"
+    Package: "org.usfirst.frc330.wpilibj"
+    Import: "import org.usfirst.frc330.wpilibj.SharpIR;\nimport org.usfirst.frc330.wpilibj.SharpIR.SharpType;"
+    Construction: "#variable($Short_Name) = new ${ClassName}(SharpType.${SharpType}, ${Sharp_IR_Channel_Analog});"
+    LiveWindow: "addChild(#variable($Short_Name));"
