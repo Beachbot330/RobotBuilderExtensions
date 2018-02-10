@@ -2,5 +2,5 @@
     Defaults: "Component,None"
     ClassName: "BBDualServo"
     Import: "import org.usfirst.frc330.wpilibj.BBDualServo;"
-    Construction: "#variable($Name) = new ${ClassName}(#variable($Servo1), #variable($Servo2));"
-    LiveWindow: "addChild(#variable($Name));"
+    Construction: "#variable($Short_Name) = new ${ClassName}(#variable($Servo1), #variable($Servo2));"
+    LiveWindow: "addChild(#variable($Short_Name));"

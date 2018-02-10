@@ -1,6 +1,6 @@
   Two Joystick Button:
     Defaults: "OI,None"
     ClassName: "TwoJoystickButton"
-    Construction: "#variable($Name) = new ${ClassName}(#variable($Joystick), ${TriggerButton}, ${CommandSelectButton});"
+    Construction: "#variable($Short_Name) = new ${ClassName}(#variable($Joystick), ${TriggerButton}, ${CommandSelectButton});"
     Extra:  "#variable($Name).${When_to_Run}(new #class($False_Command)(), new #class($True_Command)());"
     Import: "import edu.wpi.first.wpilibj.buttons.${ClassName};"

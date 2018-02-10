@@ -3,5 +3,5 @@
     ClassName: "AHRS"
     Package: "com.kauailabs.navx.frc"
     Import: "import com.kauailabs.navx.frc.AHRS;\nimport edu.wpi.first.wpilibj.SPI.Port;"
-    Construction: "#variable($Name) = new ${ClassName}(Port.kMXP, (byte)${UpdateRate});"
-    LiveWindow: "addChild(#variable($Name));"
+    Construction: "#variable($Short_Name) = new ${ClassName}(Port.kMXP, (byte)${UpdateRate});"
+    LiveWindow: "addChild(#variable($Short_Name));"
